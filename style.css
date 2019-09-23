@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: 25% 25% 2fr 1fr;
+  grid-template-rows: 200px 200px;
+  grid-gap: 10px 15px;
+  border: 2px blue solid;
+  height: 500px;
+  width: 500px;
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}
+
+.a {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.container {
+  grid-template-areas: "header header"
+                      "nav nav"
+                      "left right"
+                      "footer footer";
+  grid-area:                     
+}
